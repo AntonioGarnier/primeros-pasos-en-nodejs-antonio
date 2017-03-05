@@ -1,17 +1,16 @@
-# Book Title
+# Introducción
 
-> Book introduction here.
+En este libro se recogerá toda la información relativa a la práctica de [Tareas iniciales](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/practicas/practicatareasiniciales.html).
 
-## Live Demo
+## Objetivo
+El objetivo de éste libro es aprender como usar eficientemente [GitHub](https://github.com) y cooperar como equipo
+en una organización, así como crear libros en [GitBook](https://www.gitbook.com/) e instalar todo lo necesario para
+el desarrollo de proyectos.
 
-[Check demo!](http://my-user.github.io/my-repo)
+## Componentes del equipo
 
-## Background
+* [Antonio Jesús López Garnier](https://AntonioGarnier.github.io)
 
-> [gitbook](http://www.gitbook.io) is used to generate github pages.
+* Alberto Antonio Sarabia Suarez
 
-## Contributing
-
-1. Create Issue
-2. Fork and PR
-
+[Primer capítulo](capitulo1/README.md)
