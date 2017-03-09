@@ -4,36 +4,40 @@
   "description": "GitBook Boilerplate",
   "main": "index.js",
   "scripts": {
-    "generate-gitbook": "./scripts/losh generate-gitbook",
-    "generate-wiki": "./scripts/losh generate-wiki",
+    "generate-gitbook": "node scripts/generate-gitbook.js",
+    "generate-wiki": "node ./scripts/generate-wiki.js",
     "build": "npm install && npm i gitbook-cli && npm run generate-gitbook && npm run generate-wiki",
-    "deploy-gitbook": "./scripts/losh deploy-gitbook",
-    "deploy-wiki": "./scripts/losh deploy-wiki",
+    "deploy-gitbook": "node ./scripts/deploy-gitbook.js",
+    "deploy-wiki": "node ./scripts/deploy-wiki.js",
     "deploy": "npm run build && npm run deploy-gitbook && npm run deploy-wiki",
-    "version": "./scripts/losh version",
+    "version": "node ./scripts/version.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/enten/gitbook-boilerplate.git",
-    "wiki": "https://github.com/enten/gitbook-boilerplate.wiki.git"
+    "url": "https://github.com/AntonioGarnier/primeros-pasos-en-nodejs-alberto-antonio",
+    "wiki": "https://github.com/AntonioGarnier/primeros-pasos-en-nodejs-alberto-antonio.wiki.git"
   },
   "keywords": [
     "gitbook",
     "boilerplate",
     "starter"
   ],
-  "author": "Steven Enten <steven@enten.fr>",
+  "author": "AntonioGarnier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enten/gitbook-boilerplate/issues"
+    "url": "https://github.com/AntonioGarnier/primeros-pasos-en-nodejs-alberto-antonio/issues"
   },
-  "homepage": "https://github.com/enten/gitbook-boilerplate#readme",
+  "homepage": "https://github.com/AntonioGarnier/primeros-pasos-en-nodejs-alberto-antonio#README",
   "devDependencies": {
     "async": "^1.4.0",
     "fs-extra": "^0.22.1",
     "gh-pages": "^0.3.1",
-    "gitbook-cli": "^0.3.4",
-    "gitbook": "^2.1.0"
+    "gitbook": "^2.1.0",
+    "gitbook-cli": "^0.3.6",
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
   }
 }
