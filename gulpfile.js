@@ -1,9 +1,28 @@
-var gulp = require('gulp');
+let gulp = require('gulp');
+let exec = require('child_process').exec;
 
-gulp.task('default', function() {
-   console.log("Gulp done");
-});
+gulp.task('deploy', function (cb) {
+  exec('node scripts/deploy-gitbook.js', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+})
 
-gulp.task('hola', function() {
-   console.log("Digo hola");
-});
+gulp.task('build', function (cb) {
+  exec('node scripts/generate-gitbook.js', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+})
+
+gulp.task('serve', function (cb) {
+  exec('gitbook serve', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+})
+
+gulp.task('default', ['deploy', 'build'])
