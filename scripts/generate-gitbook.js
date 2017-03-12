@@ -5,4 +5,4 @@ function puts (error, stdout, stderr) {
    console.log(stderr);
    console.log(error);
  }
-exec ("gitbook build ./txt ./gh_pages", puts);
+exec ("gitbook build ./txt ./gh-pages", puts);
