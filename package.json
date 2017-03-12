@@ -37,7 +37,8 @@
     "gitbook-cli": "^0.3.6",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-shell": "^0.6.3"
+    "gulp-shell": "^0.6.3",
+    "simple-git": "^1.67.0"
   },
   "dependencies": {
     "gitbook-cli": "^0.3.6",
