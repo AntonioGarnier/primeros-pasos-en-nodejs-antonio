@@ -33,6 +33,14 @@ gulp.task('actualiza', ['build'], function (cb) {
   });
 })
 
+gulp.task('iaas', function (cb) {
+  exec('ssh usuario@10.6.128.121', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+})
+
 gulp.task('default', ['actualiza'], function() {
    console.log("Actualizando libro en gh-pages");
 });
