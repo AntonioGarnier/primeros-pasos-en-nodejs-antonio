@@ -10,5 +10,7 @@
    4. Desplegar el gitbook en el IAAS.
 
    [Despliegue del gitbook en github](https://antoniogarnier.github.io/primeros-pasos-en-nodejs-alberto-antonio/)
-   [Despliegue en el IAAS](10.6.128.121:80)
+
+   [Despliegue en el IAAS](http:\\10.6.128.121:80)
+
    [Pagina Personal](antoniogarnier.github.io)
