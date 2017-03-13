@@ -8,3 +8,7 @@
    2. Convertir los scripts shell a javascript para poder crear y publicar un gitbook en la gh-pages.
    3. Crear un gulpfile con las tareas "build", "deploy" y "serve" para automatizar la construcción del libro.
    4. Desplegar el gitbook en el IAAS.
+
+   [Despliegue del gitbook en github](https://antoniogarnier.github.io/primeros-pasos-en-nodejs-alberto-antonio/)
+   [Despliegue en el IAAS](10.6.128.121:80)
+   [Pagina Personal](antoniogarnier.github.io)
