@@ -25,16 +25,10 @@ gulp.task('serve', function (cb) {
   });
 })
 
+gulp.task('varias', ['build', 'deploy']);
+
 gulp.task('actualiza', ['build'], function (cb) {
   exec('node scripts/deploy-gitbook.js', function (err, stdout, stderr) {
-    console.log(stdout);
-    console.log(stderr);
-    cb(err);
-  });
-})
-
-gulp.task('iaas', function (cb) {
-  exec('ssh usuario@10.6.128.121', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);
